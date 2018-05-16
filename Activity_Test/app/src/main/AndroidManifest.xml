@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 所有活动在这里注册 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.activity_test">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 主活动 -->
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:label="This is FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 显示在列表里 -->
+            </intent-filter>
+        </activity>
+        <!-- 活动二 -->
+        <activity android:name=".SecondActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <!--隐式Intent-->
+                <action android:name="com.example.MainActivity.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--默认category匹配-->
+                <category android:name="com.example.activitytest.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <!--活动三-->
+        <activity android:name=".ThirdActivity">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

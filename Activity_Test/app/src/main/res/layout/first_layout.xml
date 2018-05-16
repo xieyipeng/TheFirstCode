@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/隐式intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式intent" />
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="finish"/>
+    <Button
+        android:id="@+id/toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="toast"/>
+    <Button
+        android:id="@+id/显式intent活动二"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显式intent(活动2)"/>
+    <Button
+        android:id="@+id/百度"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="百度"/>
+    <Button
+        android:id="@+id/活动三"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="活动三" />
+
+    <!--<Button-->
+        <!--android:id="@+id/传递字符串"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="传递字符串"/>-->
+
+    <Button
+        android:id="@+id/向上传递"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="向上传递"/>
+</LinearLayout>

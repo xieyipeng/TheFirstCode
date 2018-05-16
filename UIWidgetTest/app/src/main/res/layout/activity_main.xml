@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#00ff00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is TextView"/>
+    <Button
+        android:id="@+id/AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AlertDialog"
+        android:textAllCaps="false"/>
+<!--禁用大小写转换-->
+    <Button
+        android:id="@+id/image_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="image_view2"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progress_dialog"
+        android:textAllCaps="false"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tiger"/>
+<!--进度条-->
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progress_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" -->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:max="100"/>-->
+
+<!--文本框-->
+    <!--<EditText-->
+    <!--android:id="@+id/edit_text"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Type something here"-->
+    <!--android:maxLines="2"/>-->
+
+</LinearLayout>
